@@ -1,0 +1,71 @@
+// Calculates the zero of f(x) = x^5 + 5x^3 - 5 by using the Newton's method 
+0 START
+1 LOADNUM 0.5
+2 STORE 10
+
+
+10 JUMP 100
+11 STORE 11
+
+20 JUMP 200
+21 STORE 12
+
+30 LOAD 11
+31 DIV 12
+32 STORE 13
+
+// NEUES X
+33 LOAD 10
+34 SUB 13
+35 OUT
+36 STORE 14
+
+// Abbruchbedingung
+40 LOAD 10
+41 SUB 14
+42 JUMPNULL 60
+43 LOAD 14
+44 STORE 10
+45 JUMP 10
+
+60 LOAD 14
+61 OUT
+62 STOP
+
+
+// SPRINGE AN STELLE 100 um f(x) bzw . f([10]) zu bestimmen
+// f(x) ausrechnen wo an stelle 10 x steht
+100 LOAD 10
+101 MUL 10
+102 MUL 10
+103 MUL 10
+104 MUL 10
+105 STORE 20
+// an stelle 20 x^5
+110 LOAD 10
+111 MUL 10
+112 MUL 10
+113 MULNUM 5
+114 STORE 21
+// an stelle 21 5*x^3
+120 LOAD 20
+121 ADD 21
+122 SUBNUM 5
+123 JUMP 11
+
+// BERECHNE f'([10])
+200 LOAD 10
+201 MUL 10
+202 MUL 10
+203 MUL 10
+204 MULNUM 5
+205 STORE 30
+// an stelle 30 = 5*x^4
+210 LOAD 10
+211 MUL 10
+212 MULNUM 15
+213 STORE 31
+// an stelle 31 = 15*x^2
+220 LOAD 30
+221 ADD 31
+222 JUMP 21

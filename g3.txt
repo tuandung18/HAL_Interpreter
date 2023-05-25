@@ -1,0 +1,4 @@
+1 IN 3
+2 ADDNUM 1
+3 OUT 2
+4 JUMP 1

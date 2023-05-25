@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Interpreter",
+            "request": "launch",
+            "mainClass": "Eren.hal.Interpreter",
+            "projectName": "HALInterpreter_ee10b308"
+        },
+        {
+            "type": "java",
+            "name": "halOS",
+            "request": "launch",
+            "mainClass": "Eren.hal.halOS",
+            "projectName": "HALInterpreter_ee10b308"
+        }
+    ]
+}

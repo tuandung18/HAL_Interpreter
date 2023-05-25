@@ -1,0 +1,57 @@
+{
+  "connections": [
+    {
+      "startID": "1",
+      "startPort": 4,
+      "destID": "4",
+      "destPort": 2
+    },
+    {
+      "startID": "2",
+      "startPort": 2,
+      "destID": "1",
+      "destPort": 3
+    },
+    {
+      "startID": "2",
+      "startPort": 3,
+      "destID": "3",
+      "destPort": 3
+    },
+    {
+      "startID": "3",
+      "startPort": 2,
+      "destID": "1",
+      "destPort": 2
+    },
+    {
+      "startID": "STDIN",
+      "destID": "2",
+      "destPort": 0
+
+    },
+    {
+      "startID": "4",
+      "startPort": 1,
+      "destID": "STDOUT"
+    }
+  ],
+  "hal": [
+    {
+      "id": "1",
+      "program-file": "./g1.txt"
+    },
+    {
+      "id": "2",
+      "program-file": "./g2.txt"
+    },
+    {
+      "id": "3",
+      "program-file": "./g3.txt"
+    },
+    {
+      "id": "4",
+      "program-file": "./g4.txt"
+    }
+  ]
+}

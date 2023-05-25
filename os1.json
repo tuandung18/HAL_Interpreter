@@ -1,0 +1,81 @@
+{
+  "connections": [
+    {
+      "startID": "1",
+      "startPort": 3,
+      "destID": "2",
+      "destPort": 2
+    },
+    {
+      "startID": "2",
+      "startPort": 3,
+      "destID": "3",
+      "destPort": 2
+    },
+    {
+      "startID": "3",
+      "startPort": 3,
+      "destID": "4",
+      "destPort": 2
+    },{
+      "startID": "4",
+      "startPort": 3,
+      "destID": "5",
+      "destPort": 2
+    },
+    {
+      "startID": "STDIN",
+      "destID": "1",
+      "destPort": 0
+
+    },
+    {
+      "startID": "1",
+      "destID": "STDOUT",
+      "startPort": 1
+
+    },{
+      "startID": "2",
+      "destID": "STDOUT",
+      "startPort": 1
+
+    },{
+      "startID": "3",
+      "destID": "STDOUT",
+      "startPort": 1
+
+    },{
+      "startID": "4",
+      "destID": "STDOUT",
+      "startPort": 1
+
+    },
+    {
+      "startID": "5",
+      "startPort": 1,
+      "destID": "STDOUT"
+    }
+  ],
+  "hal": [
+    {
+      "id": "1",
+      "program-file": "./p1.txt"
+    },
+    {
+      "id": "2",
+      "program-file": "./p2.txt"
+    },
+    {
+      "id": "3",
+      "program-file": "./p2.txt"
+    },
+    {
+      "id": "4",
+      "program-file": "./p2.txt"
+    },
+    {
+      "id": "5",
+      "program-file": "./p3.txt"
+    }
+  ]
+}
